@@ -1,0 +1,6 @@
+<h1>All Blog Posts</h1>
+<ul>
+    {% for post in posts %}
+        <li><strong>{{ post.title }}</strong> by {{ post.author }}<br>{{ post.content|truncatewords:20 }}</li>
+    {% endfor %}
+</ul>
